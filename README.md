@@ -24,7 +24,7 @@ I want to find the formula how github calculates the weight of individual cells.
 Yes I pushed 66,795 commits to my private repo. But apparently github only counted last 1000 commits for 2017.
 ![image](https://github.com/user-attachments/assets/196fbd51-d5bc-48cc-87b0-7d9ea4b796af)
 
-I was wondering where is the color lavel decision taken? I checked the network tab and saw this tag comes from server. So the decision code is in the server. 
+I was wondering where is the color level decision taken? I checked the network tab and saw this tag comes from server. So the decision code is in the server. 
 
 ![image](https://github.com/user-attachments/assets/c804abc3-0322-4300-872c-34d44c5f7ec4)
 
