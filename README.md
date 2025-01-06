@@ -20,5 +20,13 @@ Contribution graph is generated for a year. There are 7 rows. Row starts at sund
 So my contribution for year 2017 is completely empty:
 ![image](https://github.com/user-attachments/assets/168a9d23-d487-4b99-9d41-5af0518240a6)
 
-I want to find the formula how github calculates the weight of individual cells. To test that I am going to add 1 commit in first day, 2 commit in second day and so on for  365 days of 2017.
+I want to find the formula how github calculates the weight of individual cells. To test that I am going to add 1 commit in first day, 2 commit in second day and so on for 365 days of 2017.
+Yes I pushed 66,795 commits to my private repo. But apparently github only counted last 1000 commits for 2017.
+![image](https://github.com/user-attachments/assets/196fbd51-d5bc-48cc-87b0-7d9ea4b796af)
+
+I was wondering where is the color lavel decision taken? I checked the network tab and saw this tag comes from server. So the decision code is in the server. 
+
+![image](https://github.com/user-attachments/assets/c804abc3-0322-4300-872c-34d44c5f7ec4)
+
+I will just need to test for few days. So now I will test for 20 days. There will be (1 + 2 + 3 + .. + 43) = 43 * 44 / 2 = 43 * 22 = 946 contributions [ yay it is less than 1000].
 
