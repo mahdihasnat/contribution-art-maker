@@ -111,7 +111,7 @@ function getLevel(contribution, maxContribution) {
 ````
 Though this formula works for ideal cases I generated, but I really should test this formula for other existing pages. So here is a validator function that visits all the cells and validate the level with my implementation. 
 
-https://github.com/mahdihasnat/contribution-art-maker/blob/87c3f3bf4e1ddea310e9689ff544830e32e525fa/formula-verifier.js
+https://github.com/mahdihasnat/contribution-art-maker/blob/87c3f3bf4e1ddea310e9689ff544830e32e525fa/formula-verifier.js#L1-L47
 
 I was hoping that this will pass for every year, but alas!. There are exceptions in some year. For example in 2018, I have 3 days with [4,4,1] contributions. Here my formula suggests the levels will be [4,4,2]. But actual levels were [4,4,4]. 🤦
 
