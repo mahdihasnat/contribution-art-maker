@@ -29,6 +29,7 @@ I was wondering where is the color level decision taken? I checked the network t
 ![image](https://github.com/user-attachments/assets/c804abc3-0322-4300-872c-34d44c5f7ec4)
 
 I will just need to test for few days. So now I will test for 43 days. There will be (1 + 2 + 3 + .. + 43) = 43 * 44 / 2 = 43 * 22 = 946 contributions [ yay it is less than 1000].
+I tested with few fix max contributions. (eg. 34, 40, 41, 42, 43).
 
 ![image](https://github.com/user-attachments/assets/7c1b03ec-0735-42ce-9a81-c102cf10c1ee)
 | Level   | Range (out of 34) | Total |
@@ -78,3 +79,40 @@ I will just need to test for few days. So now I will test for 43 days. There wil
 | Level-3 | 23 .. 33  | 11 |
 | Level-4 | 34 .. 44  | 11 |
 ----------------------------
+
+After analyzing these results I came up with a function to get levels based on contribution.
+```js
+function getLevel(contribution, maxContribution) {
+    const segmentSize = Math.floor(maxContribution / 4)
+    const segments = [segmentSize, segmentSize, segmentSize, segmentSize];
+    var reminder = maxContribution % 4;
+    if (reminder > 0) {
+        segments[3]++;
+        reminder--;
+    }
+    if(reminder > 1) {
+        segments[2] ++;
+        reminder--;
+    }
+    if(reminder > 0) {
+        segments[1] ++;
+        reminder--;
+    }
+    console.assert(reminder === 0);
+    for(let i = 0; i < segments.length; i++) {
+        if(contribution <= segments[i]) {
+            return i + 1;
+        }
+        contribution -= segments[i];
+    }
+    console.assert(false);
+    return -1;
+}
+````
+Though this formula works for ideal cases I generated, but I really should test this formula for other existing pages. So here is a validator function that visits all the cells and validate the level with my implementation. 
+
+https://github.com/mahdihasnat/contribution-art-maker/blob/87c3f3bf4e1ddea310e9689ff544830e32e525fa/formula-verifier.js
+
+I was hoping that this will pass for every year, but alas!. There are exceptions in some year. For example in 2018, I have 3 days with [4,4,1] contributions. Here my formula suggests the levels will be [4,4,2]. But actual levels were [4,4,4]. 🤦
+
+Anyway, I am going to stick to my formula hoping that it will be correct for majority of the cases.
