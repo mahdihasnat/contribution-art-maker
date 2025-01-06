@@ -2,7 +2,7 @@
 Attempt to create nice contribution art 
 
 ## Motivation
-I came accross to a linkdein post where an author share nice doller sign in his github contribution chart.
+I came accross to a linkdein post where an author shared nice doller sign in his github contribution chart.
 
 ![image](https://github.com/user-attachments/assets/06377e6d-6d3c-4304-b24e-0e101c273c79)
 
@@ -15,4 +15,10 @@ Now I can just run a cron job everyday. That job will commit appropriate number 
 
 I am not surprized because it is possible to spoof commit data. I had a similar experiment here [childhood-codes](https://github.com/mahdihasnat/childhood-codes). I just created a commit for year 2004.
 
-Contribution graph is generated for a year. There are 7 rows. Row starts at sunday. There will be 365[+1 if leap year] data points. Each cell can contain one of the 5 different color. From black to green.
+Contribution graph is generated for a year. There are 7 rows. Row starts at sunday. There will be 365[+1 if leap year] data points. Each cell can contain one of the 5 different color. From black to green. 
+
+So my contribution for year 2017 is completely empty:
+![image](https://github.com/user-attachments/assets/168a9d23-d487-4b99-9d41-5af0518240a6)
+
+I want to find the formula how github calculates the weight of individual cells. To test that I am going to add 1 commit in first day, 2 commit in second day and so on for  365 days of 2017.
+
