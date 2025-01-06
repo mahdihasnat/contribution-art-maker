@@ -30,3 +30,11 @@ I was wondering where is the color lavel decision taken? I checked the network t
 
 I will just need to test for few days. So now I will test for 20 days. There will be (1 + 2 + 3 + .. + 43) = 43 * 44 / 2 = 43 * 22 = 946 contributions [ yay it is less than 1000].
 
+![image](https://github.com/user-attachments/assets/f2912074-f88f-4083-b5c7-e6ada0249f2a)
+| Level   | Range     |
+|---------|-----------|
+| Level-1 | 1 .. 10   |
+| Level-2 | 11 .. 21  |
+| Level-3 | 22 .. 32  |
+| Level-4 | 33 .. 43  |
+----------------------
