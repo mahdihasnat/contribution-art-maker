@@ -117,6 +117,11 @@ I was hoping that this will pass for every year, but alas!. There are exceptions
 
 Anyway, I am going to stick to my formula hoping that it will be correct for majority of the cases.
 
+First time when I tried to color every 365 days, I just got color for last few days. To be exact , contribution for last 1000 comiits. So What if instead of single push after all commits, I will push after every 1000 commit. I tried and actually worked! 🎉
 
-## Contribution;
+![image](https://github.com/user-attachments/assets/73fe208a-55e1-44bf-a2b3-1b1d2f84c16e)
+
+Now I got the secret to arbitrarily add any number of contribution to the year.
+
+## Collaboration
 This is currently work in progress project. If you find it interesting and want to contribute, you can create issues, pull requests or just email/message me for discussion.
