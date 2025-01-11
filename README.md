@@ -81,34 +81,9 @@ I tested with few fix max contributions. (eg. 34, 40, 41, 42, 43).
 ----------------------------
 
 After analyzing these results I came up with a function to get levels based on contribution.
-```js
-function getLevel(contribution, maxContribution) {
-    const segmentSize = Math.floor(maxContribution / 4)
-    const segments = [segmentSize, segmentSize, segmentSize, segmentSize];
-    var reminder = maxContribution % 4;
-    if (reminder > 0) {
-        segments[3]++;
-        reminder--;
-    }
-    if(reminder > 1) {
-        segments[2] ++;
-        reminder--;
-    }
-    if(reminder > 0) {
-        segments[1] ++;
-        reminder--;
-    }
-    console.assert(reminder === 0);
-    for(let i = 0; i < segments.length; i++) {
-        if(contribution <= segments[i]) {
-            return i + 1;
-        }
-        contribution -= segments[i];
-    }
-    console.assert(false);
-    return -1;
-}
-````
+
+https://github.com/mahdihasnat/contribution-art-maker/blob/87c3f3bf4e1ddea310e9689ff544830e32e525fa/formula-verifier.js#L1-L26
+
 Though this formula works for ideal cases I generated, but I really should test this formula for other existing pages. So here is a validator function that visits all the cells and validate the level with my implementation. 
 
 https://github.com/mahdihasnat/contribution-art-maker/blob/87c3f3bf4e1ddea310e9689ff544830e32e525fa/formula-verifier.js#L1-L47
