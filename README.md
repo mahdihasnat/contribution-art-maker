@@ -123,5 +123,15 @@ First time when I tried to color every 365 days, I just got color for last few d
 
 Now I got the secret to arbitrarily add any number of contribution to the year.
 
+![image](https://github.com/user-attachments/assets/5ff0080f-0488-46a7-9267-229d31eca3f0)
+
+This is my current contribution chart for year 2020. There are different contribution for each day. I want to erase all the existing contribution from this chard. Obviously I don't want to temper the commit date of my existing codes. One idea is to make extra commit on each day such that every day has same number of commits. So I tried that with a little bit of script as the following. You can run this script on dev-tools/console on your github profile page and selecting proper year. After you run the js script, a bash script will be downloaded. Just run the bash script at any of your repository. Tip: you should create a private repository so that you can undoe the contributions by deleteing the repository.
+
+https://github.com/mahdihasnat/contribution-art-maker/blob/7cd5227f4545c3be035e86091d769667e7d04b8c/reset-contribution.js#L1-L76
+
+![image](https://github.com/user-attachments/assets/33c1c90b-827a-4529-9665-fad2343118a7)
+
+Voila! what a nice green valley 💚
+
 ## Collaboration
 This is currently work in progress project. If you find it interesting and want to contribute, you can create issues, pull requests or just email/message me for discussion.
