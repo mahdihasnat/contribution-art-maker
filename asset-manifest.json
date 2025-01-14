@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/contribution-art-maker/static/css/main.f855e6bc.css",
+    "main.js": "/contribution-art-maker/static/js/main.22cdb284.js",
+    "static/js/563.2254d202.chunk.js": "/contribution-art-maker/static/js/563.2254d202.chunk.js",
+    "static/media/logo.svg": "/contribution-art-maker/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/contribution-art-maker/index.html",
+    "main.f855e6bc.css.map": "/contribution-art-maker/static/css/main.f855e6bc.css.map",
+    "main.22cdb284.js.map": "/contribution-art-maker/static/js/main.22cdb284.js.map",
+    "563.2254d202.chunk.js.map": "/contribution-art-maker/static/js/563.2254d202.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.22cdb284.js"
+  ]
+}
