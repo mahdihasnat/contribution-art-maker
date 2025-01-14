@@ -1,6 +1,7 @@
 {
   "name": "contribution-art-maker-client",
   "version": "0.1.0",
+  "homepage": "https://mahdihasnat.github.io/contribution-art-maker",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
